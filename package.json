@@ -1,0 +1,25 @@
+{
+  "name": "mysql-project",
+  "version": "1.0.0",
+  "description": "\"# mySQL-Project\" \r \"# mySQL-Project\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jef1993/mySQL-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jef1993/mySQL-Project/issues"
+  },
+  "homepage": "https://github.com/jef1993/mySQL-Project#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}

@@ -31,6 +31,7 @@ const Suppliers = sequelize.define("Suppliers", {
   },
   credibility: {
     type: DataTypes.STRING,
+
   },
 });
 

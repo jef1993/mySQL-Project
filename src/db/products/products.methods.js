@@ -1,5 +1,6 @@
 const Products = require("./products.model");
 const { sequelize } = require("../connection");
+const { Op } = require("sequelize");
 
 exports.addProduct = async (entry) => {
   try {
@@ -12,8 +13,10 @@ exports.addProduct = async (entry) => {
 
 exports.listProducts = async (obj) => {
   try {
-    const list = await Products.findAll({ where: obj });
-    console.log(list[0]);
+    const list = await Products.findAll({
+      where: obj,
+    });
+    console.log(list.map((el) => el.dataValues));
   } catch (error) {
     console.log(error);
   }
